@@ -1,0 +1,16 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Azure AD User Insights",
+  "name_for_model": "azuread_user_plugin",
+  "description_for_human": "Query users and groups from Azure Active Directory.",
+  "description_for_model": "Access Azure AD data like user count, inactive users, and group listings.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://github.com/sethkaplanadm/STXDEVGPT/blob/main/openapi.yaml",
+    "is_user_authenticated": false
+  },
+  "logo_url": "https://github.com/sethkaplanadm/STXDEVGPT/blob/main/logo.png"
+}
