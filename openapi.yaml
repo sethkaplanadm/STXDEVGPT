@@ -1,0 +1,66 @@
+openapi: 3.0.1
+info:
+  title: Azure AD User Plugin
+  description: Plugin to query user and group information from Azure Active Directory.
+  version: "1.0.0"
+servers:
+  - url: np-openai-stockxentraid.azurewebsites.net/api
+paths:
+  /users/count:
+    get:
+      operationId: getUserCount
+      summary: Get total number of Azure AD users
+      responses:
+        '200':
+          description: Successful response with user count
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  userCount:
+                    type: integer
+  /users/inactive:
+    get:
+      operationId: getInactiveUsers
+      summary: Get a list of inactive users
+      responses:
+        '200':
+          description: Successful response with inactive users
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  inactiveUsers:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                        displayName:
+                          type: string
+                        userPrincipalName:
+                          type: string
+  /groups/list:
+    get:
+      operationId: getGroups
+      summary: Get a list of Azure AD groups
+      responses:
+        '200':
+          description: Successful response with group list
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  groups:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                        displayName:
+                          type: string
