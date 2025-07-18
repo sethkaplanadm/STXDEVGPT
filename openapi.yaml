@@ -4,7 +4,7 @@ info:
   description: Plugin to query user and group information from Azure Active Directory.
   version: "1.0.0"
 servers:
-  - url: np-openai-stockxentraid.azurewebsites.net/api
+  - url: https://np-openai-stockxentraid.azurewebsites.net/api
 paths:
   /users/count:
     get:
