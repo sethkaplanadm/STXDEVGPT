@@ -9,7 +9,7 @@
   },
   "api": {
     "type": "openapi",
-    "url": "https://sethkaplanadm.github.io/STXDEVGPT/openapi.yaml",
+    "url": "https://raw.githubusercontent.com/sethkaplanadm/STXDEVGPT/main/openapi.yaml",
     "is_user_authenticated": false
   },
   "logo_url": "https://raw.githubusercontent.com/sethkaplanadm/STXDEVGPT/main/logo.png"
